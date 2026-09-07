@@ -287,10 +287,6 @@ function buildPortals(w){
   tp.style.left=tree.x+'px'; tp.style.top=tree.y+'px';
   checkTreeUnlock(w);
 }
-function biomeColor(b,w){
-  const m={amz:'#69F0AE',mat:'#B9F6CA',cer:'#FFCC02',pan:'#80D8FF',mac:'#A5D6A7',cat:'#FFCC80',man:'#80CBC4',oce:'#80DEEA'};
-  return m[b]||'#fff';
-}
 function checkTreeUnlock(w){
   const done=w===1?G.done1:G.done2; const animals=w===1?ANIMALS1:ANIMALS2;
   const tp=document.getElementById(w===1?'tree-portal':'tree-portal2'); if(!tp) return;
