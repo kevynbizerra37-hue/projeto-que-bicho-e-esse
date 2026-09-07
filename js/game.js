@@ -92,7 +92,6 @@ function curTree(){   return G.world===1 ? TREE1    : TREE2; }
 function curPX(){     return G.world===1 ? G.px1    : G.px2; }
 function curPY(){     return G.world===1 ? G.py1    : G.py2; }
 function curPlayerEl(){ return document.getElementById(G.world===1?'player':'player2'); }
-function curWorldEl(){  return document.getElementById(G.world===1?'world':'world2'); }
 function curMapSc(){    return G.world===1?'map':'map2'; }
 
 // ========= SAVE / LOAD =========
