@@ -1,31 +1,31 @@
 // ========= DADOS — MUNDO 1 =========
 const ANIMALS1 = [
-  { id:'arara',  name:'ARARA',  emoji:'🦜', sound:'SOUNDS/arara.mp3',
+  { id:'arara',  name:'ARARA',  emoji:'🦜', sound:'assets/sounds/arara.mp3',
     color:'linear-gradient(135deg,#1565C0,#FFD700)', biome:'amz',
     fact:'A arara vive na Floresta Amazônica! 🌳 Ela ama árvores altíssimas e frutas tropicais.' },
-  { id:'onca',   name:'ONÇA',   emoji:'🐆', sound:'SOUNDS/onca.mp3',
+  { id:'onca',   name:'ONÇA',   emoji:'🐆', sound:'assets/sounds/onca.mp3',
     color:'linear-gradient(135deg,#FFD700,#FF8F00)', biome:'pan',
     fact:'A onça-pintada caça no Pantanal! 💧 É o maior felino das Américas.' },
-  { id:'flamingo', name:'FLAMINGO', emoji:'🦩', sound:'SOUNDS/flamingo.mp3',
+  { id:'flamingo', name:'FLAMINGO', emoji:'🦩', sound:'assets/sounds/flamingo.mp3',
     color:'linear-gradient(135deg,#FF8F00,#E53935)', biome:'mat',
     fact:'O flamingo habita a Mata Atlântica! 🌿 Sua cor rosa vem dos alimentos que ele come.' },
-  { id:'macaco', name:'MACACO', emoji:'🐵', sound:'SOUNDS/macaco.mp3',
+  { id:'macaco', name:'MACACO', emoji:'🐵', sound:'assets/sounds/macaco.mp3',
     color:'linear-gradient(135deg,#FF8F00,#6D4C41)', biome:'amz',
     fact:'O macaco-prego vive na Floresta Amazônica! 🌳 Ele usa pedras para quebrar cocos.' },
 ];
 
 // ========= DADOS — MUNDO 2 =========
 const ANIMALS2 = [
-  { id:'mico',     name:'MICO-LEÃO', emoji:'🦁', sound:'SOUNDS/mico.mp3',
+  { id:'mico',     name:'MICO-LEÃO', emoji:'🦁', sound:'assets/sounds/mico.mp3',
     color:'linear-gradient(135deg,#FFD700,#FF8F00)', biome:'mac',
     fact:'O mico-leão-dourado vive na Mata Costeira! 🌿 É um dos animais mais ameaçados do Brasil.' },
-  { id:'tatu',     name:'TATU',      emoji:'🦔', sound:'SOUNDS/tatu.mp3',
+  { id:'tatu',     name:'TATU',      emoji:'🦔', sound:'assets/sounds/tatu.mp3',
     color:'linear-gradient(135deg,#8D6E63,#5D4037)', biome:'cat',
     fact:'O tatu vive na Caatinga! 🌵 Sua armadura de osso o protege dos predadores.' },
-  { id:'capivara', name:'CAPIVARA',  emoji:'🦫', sound:'SOUNDS/capirava.mp3',
+  { id:'capivara', name:'CAPIVARA',  emoji:'🦫', sound:'assets/sounds/capirava.mp3',
     color:'linear-gradient(135deg,#795548,#4E342E)', biome:'man',
     fact:'A capivara vive nos Manguezais! 💦 É o maior roedor do mundo!' },
-  { id:'tartaruga',name:'TARTARUGA', emoji:'🐢', sound:'SOUNDS/tartaruga.mp3',
+  { id:'tartaruga',name:'TARTARUGA', emoji:'🐢', sound:'assets/sounds/tartaruga.mp3',
     color:'linear-gradient(135deg,#006064,#0277BD)', biome:'oce',
     fact:'A tartaruga-marinha nada no Oceano Atlântico! 🌊 Ela volta à mesma praia onde nasceu para desovar.' },
 ];
@@ -567,7 +567,7 @@ function getEmbeddedMapUrl(w){
   const el=document.getElementById(w===1?'map1-data':'map2-data');
   const data=(el?.textContent||'').trim();
   if(data && data.startsWith('data:image/')) return data;
-  return w===1 ? 'mapainicial.png' : 'mapacima.png';
+  return w===1 ? 'assets/images/mapainicial.png' : 'assets/images/mapacima.png';
 }
 
 function applyWorldSize(w){
